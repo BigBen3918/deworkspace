@@ -1,0 +1,119 @@
+.x-stepper-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.x-stepper-item{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 2%;
+    border: none;
+    color: #f47a20;
+    background-color: transparent;
+    border-bottom: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #df3107, #f47a20);
+    cursor: pointer;
+}
+
+.mt-1{
+    margin-top: 10px;
+}
+
+.x-font-p{
+    color: white;
+    font-size: 19px;
+    font-family: initial;
+}
+.x-font-h6{
+    color: white;
+    font-size: 25px;
+    font-family: initial;
+    font-weight: 600;
+}
+.x-font-h5{
+    color: white;
+    font-size: 30px;
+    font-family: initial;
+    font-weight: 600;
+}
+.x-font-orange-h5{
+    color: #f16e1c;
+    font-size: 30px;
+    font-family: initial;
+}
+.x-font-orange-h6{
+    color: #f16e1c;
+    font-size: 25px;
+    font-family: initial;
+}
+.x-button1{
+    position: relative;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid white;
+    padding: 7px 20px 1px;
+    cursor: pointer;
+}
+.x-testimonial-footer{
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.x-about-vision-container{
+    background-color: #42056b;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+}
+.x-vision-content1{
+   width: 40%;
+   display: inline-block;
+   vertical-align: top;
+}
+.x-vision-content2{
+    width: 60%;
+    display: inline-block;
+ }
+.x-contact-container{
+    width: 900px!important;
+}
+.x-contact-bg{
+    background-color: #42056b;
+    margin-bottom: 50px;
+}
+.x-contact-submit-button{
+    margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+    .x-stepper-item{
+        padding: 1%;
+        font-size: 12px;
+        border-bottom: 2px solid;
+        cursor: pointer;
+    }
+    .x-stepper-container{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .x-vision-content2 .x-font-orange-h5{
+        font-size: 15px;
+    }
+    .x-vision-content2 .x-font-h5{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .x-contact-container{
+        width: 100%!important;
+        text-align: center;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 900px) and (orientation:portrait) {
+    .x-contact-container{
+        width: 100%!important;
+    }
+  }
+

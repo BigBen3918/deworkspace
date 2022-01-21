@@ -1,0 +1,78 @@
+.testimonial {
+
+	.tiles-item-inner {
+		background-color: #42056b;		
+	}
+}
+
+.testimonial-item-content1 {
+    position: relative;
+    text-align: center;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 124px;
+        height: 180px;
+        margin-top: 12px;
+        margin-bottom: 16px;
+        background-image: url("../../../images/service1.png");
+        background-repeat: no-repeat;
+    }		
+}
+.testimonial-item-content2 {
+    position: relative;
+    text-align: center;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 124px;
+        height: 180px;
+        margin-top: 12px;
+        margin-bottom: 16px;
+        background-image: url("../../../images/service2.png");
+        background-repeat: no-repeat;
+    }		
+}
+.testimonial-item-content3 {
+    position: relative;
+    text-align: center;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 124px;
+        height: 180px;
+        margin-top: 12px;
+        margin-bottom: 16px;
+        background-image: url("../../../images/service3.png");
+        background-repeat: no-repeat;
+    }		
+}
+
+.testimonial-item-footer {
+    font-weight: 600;
+    padding-top: 20px;
+    text-align: center;
+
+    &.has-top-divider {
+
+        &::before {
+            background: get-color(dark, 3);
+        }
+    }
+}
+
+.testimonial-item-link {
+	color: get-color(secondary, 3);
+
+	a {
+        color: get-color(secondary, 3);
+        text-decoration: none;
+
+        &:hover {
+            color: get-color(secondary, 2);
+        }
+	}
+}

@@ -1,0 +1,153 @@
+.hero {
+
+	.section-inner {
+		padding-top: $hero--padding-t__mobile;
+		padding-bottom: $hero--padding-b__mobile;
+	}
+	.about-inner {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+}
+
+.hero-inner {
+
+	// Affects only hero full
+	> .hero-content + .hero-figure,
+	> .hero-figure + .hero-content {
+		margin-top: $hero--inner-padding-v_mobile;
+	}
+
+	> .hero-figure {
+
+		> a {
+			display: inline-flex;
+			// prevents stretching
+			align-items: center;
+			vertical-align: top;
+		}
+	}
+}
+
+@include media( '<=medium' ) {
+
+	.hero {
+
+		.split-wrap {
+
+			.split-item {
+
+				.split-item-content {
+					margin-bottom: $hero--inner-padding-v_mobile;
+				}
+			}
+
+			&.invert-mobile {
+
+				.split-item {
+
+					.split-item-image {
+						margin-bottom: $hero--inner-padding-v_mobile;
+					}
+				}
+			}
+		}
+	}
+	.hero-inner {
+
+		// Affects only hero full
+		> .hero-content{
+			max-width: $features-home-layout--width;
+			display: inline-block;
+		}
+		> .hero-figure {
+			max-width: $features-home-layout--width;
+			display: none;
+		}
+	}
+}
+
+@include media( '>medium' ) {
+
+	.hero {
+
+		.section-inner {
+			padding-top: 40px;
+			padding-bottom: 60px;
+		}
+		.about-inner {
+			padding-top: 40px;
+			padding-bottom: 60px;
+			bottom: 120px;
+		}
+		.service-inner {
+			padding-top: 40px;
+			padding-bottom: 60px;
+			bottom: 230px;
+			left: -70px;
+		}
+	}
+
+	.hero-inner {
+
+		// Affects only hero full
+		> .hero-content{
+			max-width: $features-home-layout--width;
+			display: inline-block;
+			margin: 70px;
+			float: left;
+		}
+		> .hero-content-about{
+			max-width: $features-home-layout--width;
+			display: inline-block;
+			margin: 30px;
+		}
+		> .hero-figure {
+			max-width: $features-home-layout--width;
+			display: inline-block;
+			margin: 70;
+			animation: MoveUpDown 2s linear infinite;
+		}
+		> .hero-figure-about {
+			max-width: $features-home-layout--width;
+			display: inline-block;
+			margin: 70;
+			animation: MoveUpDownAbout 2s linear infinite;
+		}
+		> .hero-figure-service {
+			max-width: $features-home-layout--width;
+			display: inline-block;
+			margin: 70;
+			animation: MoveUpDownService 2s linear infinite;
+		}
+	}
+}
+
+@keyframes MoveUpDown {
+	0%, 100% {
+	  bottom: 0px;
+	}
+	50% {
+	  bottom: 20px;
+	}
+  }
+
+  @keyframes MoveUpDownAbout {
+	0%, 100% {
+	  bottom: -180px;
+	}
+	50% {
+	  bottom: -200px;
+	}
+  }
+
+  @keyframes MoveUpDownService {
+	0%, 100% {
+	  bottom: -300px;
+	  left: 200px;
+	}
+	50% {
+	  bottom: -280px;
+	}
+  }
+
